@@ -1,0 +1,268 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.8rem;
+    
+}
+
+.nav-left {
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-left img {
+    margin: 0 6%;
+    cursor: pointer;
+}
+
+.search-div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    
+}
+
+
+.search-div img, .search-div input {
+    margin: 0 5%;
+    cursor: pointer;
+}
+
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-right img {
+    margin: 0 5%;
+    cursor: pointer;
+}
+
+.main {
+    background-color: #f9f9f9;
+    display: flex;
+    padding: 4vh 0;
+    justify-content: flex-end;
+
+}
+
+.video {
+    width: 65vw;
+    margin-right: 2vw;
+}
+
+
+
+.description-sec {
+    padding: 0.7rem 0;
+
+}
+
+.description-info a, .description-info h2, .description-info h4 {
+    margin: 0.6rem 0;
+}
+
+.description-info a {
+    font-size: 0.9rem;
+}
+
+.description-info h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.description-info h4 {
+    font-size: 0.8rem;
+    color: #242424;
+    font-weight: 600;
+}
+
+.description-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.3rem 0;
+    padding: 0.7rem 0;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin: 0 1.2vw;
+}
+
+.icons h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.icons img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+
+
+
+.sidebar {
+    width: 30vw;
+    margin-right: 0.5vw;
+
+}
+
+.related {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0.6rem;
+}
+
+.related button {
+    color: black;
+    background-color: #ececec;
+    border: #a5a3a3 1px solid;
+    padding: 0.4rem 0.8rem;
+    margin: 5px 10px;
+    border-radius: 20px;
+}
+
+.active-btn {
+    background-color: black !important;
+    color: white !important;
+    border: none !important;
+}
+
+.suggested-videos {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+}
+
+.suggested-div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.3rem;
+}
+
+.suggested-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0.4rem;
+
+}
+
+.suggested-info h5 {
+    margin-bottom: 0.3rem;
+}
+
+
+
+.suggested-info p {
+    color: #606060;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.2rem;
+}
+
+.video-img {
+    width: 10rem;
+    position: relative;
+}
+
+.video-img img {
+    width: 100%;
+    background-size: contain;
+}
+
+.duration {
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    padding: 2px;
+    font-size: 0.8rem;
+}
+
+.subscription {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+.channel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.channel-img {
+    width: 3rem;
+    margin-right: 0.7rem;
+}
+
+.channel-img img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.subscription-btn button{
+    background-color: red;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 600;
+}   
+
+
+
+
+/* Media Query */
+
+@media only screen and (max-width: 1020px) {
+    .main {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 4vh 3vh ;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+.sidebar {
+    width: 100%;
+}
+    
+}
