@@ -10,24 +10,25 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0.8rem;
-    
+    max-width: 100%;
 }
 
 .nav-left {
     display: flex;
     
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
 
 .nav-left img {
-    margin: 0 6%;
+    margin: 0 0.7rem;
     cursor: pointer;
+    width: 1.7rem;
 }
 
 .search-div {
@@ -40,22 +41,35 @@ nav {
     
 }
 
+.search-div img {
+    width: 1.5rem;
+
+}
+
+.search-div input {
+    width: 30vw;
+    height: 2rem;
+}
+
 
 .search-div img, .search-div input {
-    margin: 0 5%;
+    margin: 0 0.7rem;
     cursor: pointer;
+
 }
+
 
 
 .nav-right {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
 }
 
 .nav-right img {
-    margin: 0 5%;
+    margin: 0 0.7rem;
+    width: 1.5rem;
     cursor: pointer;
 }
 
@@ -63,6 +77,7 @@ nav {
     background-color: #f9f9f9;
     display: flex;
     padding: 4vh 0;
+    width: 100%;
     justify-content: flex-end;
 
 }
@@ -109,7 +124,7 @@ nav {
 .icons {
     display: flex;
     align-items: center;
-    margin: 0 1.2vw;
+    margin: 0 1rem;
 }
 
 .icons h4 {
@@ -233,7 +248,7 @@ nav {
 }
 
 .subscription-btn button{
-    background-color: red;
+    background-color: #c00;
     border: none;
     padding: 0.5rem 0.8rem;
     border-radius: 0.2rem;
@@ -242,12 +257,113 @@ nav {
     font-weight: 600;
 }   
 
+.comments-num h4 {
+    font-weight: 400;
+    margin: 0.8rem 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+
+.user-img {
+
+    margin-right: 0.8rem;
+}
+
+.user-img button  {
+    background-color: #c00;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 70%;
+    color: white;
+}
+
+.user-text {
+    width: 100%;
+}
+
+.user-text input {
+    width: 100%;
+    height: 1.5rem;
+    border: none;
+    background-color: #f9f9f9;
+    border-bottom: #606060 1px solid;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.user-text label {
+    font-size: 0.8rem;
+    color: #606060;
+}
+
+.user-text label a {
+    text-decoration: none;
+}
+
+
+.action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    color: #606060;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.comment {
+    background-color: none;
+    border: none;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    color: #606060;
+    font-weight: 600;
+    cursor: default;
+}
+
+
+.new-user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.new-user-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem 0;
+}
+
+
+.new-user-name h5 {
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+
+.new-user-name h5 span {
+    font-weight: 300;
+    color: #606060;
+}
 
 
 
 /* Media Query */
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 920px) {
     .main {
 
         display: flex;
@@ -261,8 +377,100 @@ nav {
         width: 100%;
     }
 
-.sidebar {
-    width: 100%;
-}
+    .sidebar {
+        width: 100%;
+    }
+
+    .icons h4 {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
     
 }
+
+@media only screen and (max-width: 500px) {
+
+    /* Nav images */
+    .nav-right img, .nav-left img {
+        margin: 0 0.5rem;
+        width: 1rem;
+        cursor: pointer;
+    }
+
+    .search-div img {
+        width: 1rem;
+    
+    }
+    
+    .search-div input {
+        width: 30vw;
+        height: 1.5rem;
+    }
+    
+    
+    .search-div img, .search-div input {
+        margin: 0 0.5rem;
+    
+    }
+
+
+
+
+    /* Icons */
+    .icons img {
+        width: 0.7rem;
+    }
+
+    .icons h4 {
+        font-size: 0.7rem;
+    }
+
+    .icons {
+        margin: 0 0.4rem;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 360px) {
+        /* Nav images */
+        .nav-right img, .nav-left img {
+            margin: 0 0.3rem;
+            width: 0.8rem;
+            cursor: pointer;
+        }
+    
+        .search-div img {
+            width: 0.8rem;
+        
+        }
+        
+        .search-div input {
+            width: 30vw;
+            height: 1.3rem;
+        }
+        
+        
+        .search-div img, .search-div input {
+            margin: 0 0.3rem;
+        
+        }
+    
+    
+    
+    
+        /* Icons */
+        .icons img {
+            width: 0.5rem;
+        }
+    
+        .icons h4 {
+            font-size: 0.5rem;
+        }
+    
+        .icons {
+            margin: 0 0.2rem;
+        }
+    
+    }
